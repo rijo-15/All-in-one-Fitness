@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChestWorkoutFour">
+
+    <Button
+        android:id="@+id/doneFirstWorkoutButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="gotoWorkoutPage"
+        android:text="Done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.935" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="401dp"
+        android:layout_height="240dp"
+        android:text="Lie back on a incline bench. Hold the bar with a normal grip and hold the bar straight over you. Breath in and slowly bring the bar down until it touches your chest. Exhale as you push the bar back to the starting position.  \n(2X10)"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.751" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="gotoWorkoutPage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="153dp"
+        android:layout_height="259dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.202"
+        app:srcCompat="@drawable/inclinebechpressnarrowgrip2" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="147dp"
+        android:layout_height="262dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.204"
+        app:srcCompat="@drawable/inclinebenchpressnormalgrip1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

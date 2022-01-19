@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundtest">
+
+    <ImageButton
+        android:id="@+id/logout_button"
+        android:layout_width="312dp"
+        android:layout_height="74dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="#95FFFFFF"
+        android:onClick="signout"
+        android:text="Log Out"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintHorizontal_bias="0.0"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:srcCompat="@drawable/logout" />
+
+    <TextView
+        android:id="@+id/homepage_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="133dp"
+        android:fontFamily="@font/raleway"
+        android:foregroundGravity="center"
+        android:text="All in One Fitness"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/surveyButtton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#95FFFFFF"
+        android:onClick="launchSurveyPage"
+        ads:layout_constraintBottom_toTopOf="@+id/surveyText"
+        ads:layout_constraintEnd_toStartOf="@+id/workoutPageBtn"
+        ads:layout_constraintHorizontal_bias="0.0"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toBottomOf="@+id/homepage_text"
+        ads:srcCompat="@drawable/survey" />
+
+    <ImageButton
+        android:id="@+id/overviewBtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#95FFFFFF"
+        android:onClick="launchOverviewPage"
+        ads:layout_constraintBottom_toTopOf="@+id/overviewText"
+        ads:layout_constraintEnd_toStartOf="@+id/gymNearMeBtn"
+        ads:layout_constraintHorizontal_bias="0.0"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toBottomOf="@+id/surveyText"
+        ads:srcCompat="@drawable/overviewpage" />
+
+    <TextView
+        android:id="@+id/surveyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="67dp"
+        android:fontFamily="@font/raleway"
+        android:text="Survey Page"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        ads:layout_constraintEnd_toStartOf="@+id/workoutText"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toBottomOf="@+id/surveyButtton" />
+
+    <TextView
+        android:id="@+id/overviewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="58dp"
+        android:fontFamily="@font/raleway"
+        android:text="Overview Page"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        ads:layout_constraintBottom_toTopOf="@+id/logout_button"
+        ads:layout_constraintEnd_toStartOf="@+id/gymText"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toBottomOf="@+id/overviewBtn" />
+
+    <TextView
+        android:id="@+id/workoutText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="49dp"
+        android:fontFamily="@font/raleway"
+        android:text="Workout Page"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintTop_toBottomOf="@+id/workoutPageBtn" />
+
+    <TextView
+        android:id="@+id/gymText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="58dp"
+        android:fontFamily="@font/raleway"
+        android:text="Gyms Near Me"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        ads:layout_constraintBottom_toTopOf="@+id/logout_button"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintTop_toBottomOf="@+id/gymNearMeBtn" />
+
+    <ImageButton
+        android:id="@+id/workoutPageBtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#95FFFFFF"
+        android:onClick="launchWorkoutPage"
+        ads:layout_constraintBottom_toTopOf="@+id/workoutText"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintTop_toBottomOf="@+id/homepage_text"
+        ads:srcCompat="@drawable/workoutpage" />
+
+    <ImageButton
+        android:id="@+id/gymNearMeBtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#95FFFFFF"
+        android:onClick="launchGymFind"
+        ads:layout_constraintBottom_toTopOf="@+id/gymText"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintTop_toBottomOf="@+id/workoutText"
+        ads:srcCompat="@drawable/gympage" />
+
+    <TextView
+        android:id="@+id/logoutText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/raleway"
+        android:text="Logout"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toBottomOf="@+id/logout_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

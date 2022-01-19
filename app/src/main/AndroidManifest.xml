@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fitnessapp">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FitnessApp">
+
+
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".SignInActivity" />
+        <activity android:name=".SurveyActivity" />
+        <activity android:name=".WorkoutActivity" />
+        <activity android:name=".OverviewActivity" />
+        <activity android:name=".BackWorkoutOne" />
+        <activity android:name=".EZBarBicepTopHalf" />
+        <activity android:name=".EZBarBicepsBottom" />
+        <activity android:name=".EZBarCurlUG" />
+        <activity android:name=".EzBarCurlWG" />
+        <activity android:name=".EZBarCUNG" />
+        <activity android:name=".ChestWorkout" />
+        <activity android:name=".CardioWorkout" />
+        <activity android:name=".BackWorkoutPage" />
+        <activity android:name=".DumbbellBiceps" />
+        <activity android:name=".BackActivity" />
+        <activity android:name=".ArmWorkout" />
+        <activity android:name=".MapsActivity"/>
+        <activity android:name=".BackWorkoutTwo"/>
+        <activity android:name=".BackWorkoutThree"/>
+        <activity android:name=".BackWorkoutFour"/>
+        <activity android:name=".BackWorkoutFive"/>
+        <activity android:name=".BackWorkoutSix"/>
+        <activity android:name=".ChestWorkoutOne"/>
+        <activity android:name=".ChestWorkoutTwo"/>
+        <activity android:name=".ChestWorkoutThree"/>
+        <activity android:name=".ChestWorkoutFour"/>
+        <activity android:name=".ChestWorkoutFive"/>
+        <activity android:name=".ChestWorkoutSix"/>
+        <activity android:name=".CardioWorkoutOne"/>
+        <activity android:name=".CardioWorkoutTwo"/>
+        <activity android:name=".CardioWorkoutThree"/>
+        <activity android:name=".CardioWorkoutFour"/>
+
+
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+</manifest>

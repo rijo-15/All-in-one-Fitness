@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    android:id="@+id/workoutlayout"
+    tools:context=".WorkoutActivity">
+
+    <Button
+        android:id="@+id/finishedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00636b"
+        android:onClick="gotoOverViewPage"
+        android:text="Finished"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.856" />
+
+    <ImageButton
+        android:id="@+id/backWorkoutButton"
+        android:layout_width="201dp"
+        android:layout_height="205dp"
+        android:onClick="gotoBackWorkoutActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.991"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.206"
+        app:srcCompat="@drawable/back" />
+
+    <ImageButton
+        android:id="@+id/cardioWorkoutButton"
+        android:layout_width="205dp"
+        android:layout_height="206dp"
+        android:onClick="gotoCardioActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666"
+        app:srcCompat="@drawable/cardio" />
+
+    <ImageButton
+        android:id="@+id/chestWorkoutButton"
+        android:layout_width="203dp"
+        android:layout_height="206dp"
+        android:onClick="gotoChestActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.995"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666"
+        app:srcCompat="@drawable/chest" />
+
+    <ImageButton
+        android:id="@+id/imageButton15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goBackToHomePage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+    <ImageButton
+        android:id="@+id/armWorkoutButton"
+        android:layout_width="203dp"
+        android:layout_height="205dp"
+        android:onClick="gotoArmsActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.206"
+        app:srcCompat="@drawable/arms" />
+</androidx.constraintlayout.widget.ConstraintLayout>
